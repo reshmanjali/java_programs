@@ -4,7 +4,6 @@ public class Box{
 		System.out.println("This is a default constructor");
 		l=10;b=20;h=4500;
 	}
-	
 }
 class ObjCreation{
 	public static void main(String args[]){
