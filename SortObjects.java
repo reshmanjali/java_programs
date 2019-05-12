@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.*;
 
-public class HelloWorld{
+public class SortObjects{
      public static void main(String []args){
         Scanner sc=new Scanner(System.in);
         Student objectArray[]=new Student[4];
@@ -11,7 +11,7 @@ public class HelloWorld{
             float marks=sc.nextFloat();
             objectArray[i]=new Student(name,roll,marks);
         }
-        for(int i=0;i<4;i++){
+        for(int i=0;i<4;i++){           //sorting the object array according to the attribute "roll"
             for(int j=0;j<4;j++){
                 if(objectArray[i].roll < objectArray[j].roll){
                     Student temp=new Student();
