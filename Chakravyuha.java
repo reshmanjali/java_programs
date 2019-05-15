@@ -1,14 +1,17 @@
+// For detailed explanation please refer : 
+// https://docs.google.com/document/d/1sEbegrfqTUaLNI1bODIWwAyfeCzdrWoesltY2ZteqT0/edit?usp=sharing
+
 import java.util.*;
 class Chakravyuha{
 	static int[][] matrixCreation(int n){
-		int[][] mat=new int[n][n];		//initialization of a matrix of size n x n. By default it gets initialized to zeros
+		int[][] mat=new int[n][n];	//initialization of a matrix of size n x n. By default it gets initialized to zeros
 		int flag=0;
 		int p=1;		//value being stored in matrix mat
 		int q=0;		//q and r are used being used to reduce the window size(moving inwards into the matrix)
 		int r=n-1;
 		while(p<=(n*n)){		// n x n matrix has n^2 elements
 			
-			for(int i=q;i<=r;i++){		//going right
+			for(int i=q;i<=r;i++){			//going right
 				mat[q][i]=p;
 				p++;
 			}
@@ -41,3 +44,6 @@ class Chakravyuha{
 		}
 	}
 }
+
+// For detailed explanation please refer : 
+// https://docs.google.com/document/d/1sEbegrfqTUaLNI1bODIWwAyfeCzdrWoesltY2ZteqT0/edit?usp=sharing
