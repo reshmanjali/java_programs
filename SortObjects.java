@@ -4,11 +4,12 @@ For brevity, The array considered is of length 4 ( contains 4 student  objects )
 import java.util.Scanner;
 import java.lang.*;
 */
+
 public class SortObjects{
      public static void main(String []args){
         Scanner sc=new Scanner(System.in);
         Student objectArray[]=new Student[4];
-        for(int i=0;i<4;i++){
+        for(int i=0;i<4;i++){                // Array is of length 4. Can be changed according to the requirement
             String name=sc.next();
             int roll=sc.nextInt();
             float marks=sc.nextFloat();
@@ -16,15 +17,15 @@ public class SortObjects{
         }
         for(int i=0;i<4;i++){           //sorting the object array according to the attribute "roll"
             for(int j=0;j<4;j++){
-                if(objectArray[i].roll < objectArray[j].roll){
+                if(objectArray[i].roll < objectArray[j].roll){   //swapping the objects in array
                     Student temp=new Student();
-                    temp=objectArray[i];
+                    temp=objectArray[i];     
                     objectArray[i]=objectArray[j];
                     objectArray[j]=temp;
                 }
             }
         }
-        for(int i=0;i<4;i++)
+        for(int i=0;i<4;i++)       //printing the sorted array
         {
             System.out.println(objectArray[i].name+"  "+objectArray[i].roll+"  "+objectArray[i].marks);
         }
