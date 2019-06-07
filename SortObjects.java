@@ -1,6 +1,9 @@
+/*This program sorts the Student Array according to one of its attributes ( attribute : "roll" ).
+The class : "Student" has 3 attributes ( name, roll, marks ).
+For brevity, The array considered is of length 4 ( contains 4 student  objects )
 import java.util.Scanner;
 import java.lang.*;
-
+*/
 public class SortObjects{
      public static void main(String []args){
         Scanner sc=new Scanner(System.in);
