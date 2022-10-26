@@ -39,7 +39,7 @@ public class Solution {
         }
     }
 
-    private static final Scanner scanner = new Scanner(System.in);
+   /* private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) throws IOException {
         int n = Integer.parseInt(scanner.nextLine());
         int edges = Integer.parseInt(scanner.nextLine());
@@ -54,4 +54,5 @@ public class Solution {
         
         System.out.println(countComponents(n, prerequisites));
     }
+    */
 }
